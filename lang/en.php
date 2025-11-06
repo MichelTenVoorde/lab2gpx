@@ -53,6 +53,7 @@ $LANG['LABEL_HINT_CACHE_TYPE'] = 'Garmin GPS devices do not support Adventure La
 $LANG['LABEL_INCLUDE_QUESTION'] = 'Include Waypoint question in Cache description';
 $LANG['LABEL_INCLUDE_DESCRIPTION'] = 'Include description of the Waypoint in Cache description';
 $LANG['LABEL_INCLUDE_CACHE_DESCRIPTION'] = 'Include the description of the Adventure Lab in the Cache description';
+$LANG['LABEL_INCLUDE_AWARD'] = 'Include Award Message in Cache description <i>(may contain spoilers)</i>';
 $LANG['LABEL_EXCLUDE_OWNER'] = 'Exclude Owner name (one per Line)';
 $LANG['LABEL_USERGUID'] = "Calling user's public GUID";
 $LANG['LABEL_HINT_USER_GUID'] = '
