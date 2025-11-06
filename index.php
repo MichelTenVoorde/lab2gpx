@@ -239,8 +239,6 @@ if (isset($_COOKIE[$cookieName])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $values = array_merge($values, $_POST);
 
-    $values['includeAwardMessage'] = false;
-
     try {
         $coordinates = CoordinateFactory::fromString((string) $values['coordinates']);
     } catch (Throwable $throwable) {
@@ -560,6 +558,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label>
                     <input type="hidden" name="includeCacheDescription" value="0">
                     <input type="checkbox" name="includeCacheDescription"<?php echo($values['includeCacheDescription'] ? ' checked="checked"' : ''); ?> /> <?php echo $LANG['LABEL_INCLUDE_CACHE_DESCRIPTION']; ?>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <input type="hidden" name="includeAwardMessage" value="0">
+                    <input type="checkbox" name="includeAwardMessage"<?php echo($values['includeAwardMessage'] ? ' checked="checked"' : ''); ?> /> <?php echo $LANG['LABEL_INCLUDE_AWARD']; ?>
                 </label>
             </div>
         </fieldset>
